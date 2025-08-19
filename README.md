@@ -1,5 +1,5 @@
-                                    ![Captura del sistema](https://github.com/Kelvin-star07/Proyecto-Reservas-De-CitasfproyectoFinal/blob/main/PantallaInicial.png)
-
+                        
+![pantalla de Inicio](https://github.com/Kelvin-star07/Proyecto-Reservas-De-Citas-fproyectoFinal/blob/021e1990f727e2d907eca441c1b1a256bbbd9634/Screenshot%202025-08-19%20114405.png)  
 
 
 
