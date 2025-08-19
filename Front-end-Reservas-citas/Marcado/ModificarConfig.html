@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Stilo/StylesConfiguracion.css">
+    <script src="/Logica/Logica.js" defer></script>
+    <title>Editando configuracion</title>
+</head>
+
+<body class="Cuerpo-pantalla-modificarConfig">
+    <header class="Cabecera-modificarConfig">
+        <img src="/Iconos/icons8-jungle-64.png" alt="palma" class="icono-parmas-updateConfig">
+
+        <img src="/Iconos/icons8-jungle-64.png" alt="palma" class="icono-parmas-updateConfig">
+
+    </header>
+
+    <main class="ContainerModificarConfig">
+
+        <div class="container-formularioModiciarConfig">
+            <form class="form-scroll">
+                <img src="/Iconos/c213ecaf-bd05-400f-b4ea-fe58b08be42a-removebg-preview (1).png" alt="Logo de la app"
+                    class="Logo">
+                <h2 d="Encabezado">Modificando Configuracion</h2>
+
+                <label for="fechaConfiguracion">Introduce la fecha de la configuracion a actualizar</label><br>
+                <input type="date" id="fechaConfiguracion" name="Fecha"><br>
+
+                <label for="turnoConfiguracion">Introduce el turno de la configuracion a actualizar</label><br>
+                <input type="text" id="turnoConfiguracion" name="Turno" placeholder="EJ: Matutino"><br>
+
+                <label for="horaInicio">Nueva Hora inicio</label><br>
+                <input type="text" id="horaInicio" name="HoraInicio" placeholder="ej: 10:00"><br>
+
+                <label for="horaFin">Nueva Hora fin</label><br>
+                <input type="text" id="horaFin" name="HoraFin" placeholder="ej: 18:00"><br>
+
+                <label for="duracionCittas">Nueva Duración de cita</label><br>
+                <input type="number" id="duracionCittas" name="DuracionCitas" placeholder="ej: 15"><br>
+
+                <label for="estacionesConfig">Nueva cantidad de estaciones</label><br>
+                <input type="number" id="estacionesConfig" name="Estaciones" placeholder="ej: 3"><br>
+            </form>
+
+            <div class="btonModificarConfig-cero">
+                <button id="ConfirmarConfig" type="button">Confirmar</button><br>
+                <button id="ConcelarConfig" type="button">Cancelar</button><br>
+            </div>
+
+            <a href="PanelAdmin.html">
+                <button id="btonbackPanelAdmin" type="button"> volver al panel</button><br>
+            </a><br>
+        </div>
+    </main>
+
+
+
+</body>
+
+</html>

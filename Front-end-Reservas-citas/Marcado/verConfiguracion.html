@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Stilo/StylesConfiguracion.css">
+    <script src="/Logica/Logica.js" defer></script>
+    <title>Ver configuracion</title>
+</head>
+
+<body>
+    <header class="Cabecera-obtener-config">
+        <img src="/Iconos/icons8-jungle-64.png" alt="palma" class="icono-parmas-verConfig">
+
+        <img src="/Iconos/icons8-jungle-64.png" alt="palma" class="icono-parmas-verConfig">
+
+        <h1 id="Encabezado">Consultar Configuración</h1>
+    </header>
+
+    <main class="container-obtener-config">
+        <div class="flex-config">
+
+            <div class="buscar-config">
+                <img src="/Iconos/c213ecaf-bd05-400f-b4ea-fe58b08be42a-removebg-preview (1).png" alt="Logo"
+                    class="Logo">
+                <h2>Buscar Configuración</h2>
+                <form id="formBuscar">
+                    <label for="fechaBuscar">Fecha:</label>
+                    <input type="date" id="fechaBuscar" name="fechaBuscar" required>
+
+                    <label for="turnoBuscar">Turno:</label>
+                    <input type="text" id="turnoBuscar" name="turnoBuscar" placeholder="EJ: Matutino" required>
+
+                    <button type="button" id="btnBuscar">Buscar</button>
+                </form>
+            </div>
+
+
+            <div class="Obtener-config" id="cuadroResultados" style="display:none;">
+                <h2>Datos de la Configuración</h2>
+                <label>Fecha:</label>
+                <input type="date" id="fechaConfig" readonly>
+
+                <label>Turno:</label>
+                <input type="text" id="turnoConfig" readonly>
+
+                <label>Hora Inicio:</label>
+                <input type="text" id="horaInicio" readonly>
+
+                <label>Hora Fin:</label>
+                <input type="text" id="horaFin" readonly>
+
+                <label>Duración de Citas:</label>
+                <input type="number" id="duracionCitas" readonly>
+
+                <label>Cantidad de Estaciones:</label>
+                <input type="number" id="cantidadEstaciones" readonly>
+            </div>
+        </div>
+
+        <div class="bton-volver-containver-admin">
+            <a href="PanelAdmin.html">
+                <button type="button">Volver al Panel</button>
+            </a>
+        </div>
+    </main>
+
+</body>
+
+</html>

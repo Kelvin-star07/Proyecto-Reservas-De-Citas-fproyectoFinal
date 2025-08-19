@@ -1,0 +1,712 @@
+/* Estilo para la pantalla de inicio */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body.CuerpoPantallaInicio {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1a2a44;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+body.CuerpoPantallaInicio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #1a2a44 0%, #1a2a44 50%, #2e7d32 50%);
+    clip-path: polygon(0 0, 50% 0, 65% 100%, 0 100%);
+    z-index: 1;
+    margin: auto;
+}
+
+body.CuerpoPantallaInicio::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #1a2a44 0%, #1a2a44 50%, #2e7d32 50%);
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 35% 100%);
+    z-index: 1;
+}
+
+
+header.headerPantallaInicio {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    z-index: 10;
+}
+
+header.headerPantallaInicio .Icon,
+header.headerPantallaInicio .Icono {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    filter: brightness(2);
+    opacity: 0.9;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+header.headerPantallaInicio .Icon:hover,
+header.headerPantallaInicio .Icono:hover {
+    opacity: 1;
+    filter: brightness(2.5);
+}
+
+
+header.headerPantallaInicio .Logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 250px;
+    margin-top: 20px;
+    padding: 20px;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5));
+    z-index: 10;
+}
+
+
+main.mainInicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    z-index: 5;
+    margin-top: 70px;
+
+}
+
+.Formulario-Login {
+    background: #2c3e50;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    min-width: 300px;
+    z-index: 10;
+}
+
+.Formulario-Login label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #bdc3c7;
+}
+
+.Formulario-Login input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    background: #34495e;
+    color: #ecf0f1;
+}
+
+.Formulario-Login input:focus {
+    background: #465c71;
+}
+
+
+.btonIngresarInicio {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #3498db;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btonIngresarInicio:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+.Formulario-Login .btn-link {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.Formulario-Login .btn-link:hover {
+    color: #2980b9;
+}
+
+
+.Formulario-Login h6 {
+    cursor: pointer;
+    color: #bdc3c7;
+    font-weight: normal;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.Formulario-Login h6:hover {
+    color: #3498db;
+}
+
+
+
+
+/*Estilo pantalla registro*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body.cuerpoPantallaRegistro {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1a2a44;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+
+body.cuerpoPantallaRegistro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #1a2a44 0%, #1a2a44 50%, #2e7d32 50%);
+    clip-path: polygon(0 0, 50% 0, 65% 100%, 0 100%);
+    z-index: 1;
+}
+
+body.cuerpoPantallaRegistro::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #1a2a44 0%, #1a2a44 50%, #2e7d32 50%);
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 35% 100%);
+    z-index: 1;
+}
+
+
+header.cabecera.pantalla.registro {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    z-index: 10;
+}
+
+header.cabecera.pantalla.registro .Icon,
+header.cabecera.pantalla.registro .Icono {
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    filter: brightness(2);
+    opacity: 0.9;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+header.cabecera.pantalla.registro .Icon:hover,
+header.cabecera.pantalla.registro .Icono:hover {
+    opacity: 1;
+    filter: brightness(2.5);
+}
+
+
+header.cabecera.pantalla.registro .Logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 250px;
+    padding: 20px;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5));
+    z-index: 10;
+}
+
+
+main.cuerpo-pantalla-registro {
+    position: absolute;
+    top: 115px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.Formulario-registro {
+    background: #2c3e50;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 1050px;
+    max-height: 80vh;
+    overflow-y: auto;
+    z-index: 10;
+    margin-bottom: 30;
+    height: 500px;
+}
+
+.Formulario-registro h3 {
+    color: #ecf0f1;
+    margin-bottom: 20px;
+}
+
+.Formulario-registro label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #bdc3c7;
+}
+
+.Formulario-registro input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    background: #34495e;
+    color: #ecf0f1;
+}
+
+.Formulario-registro input:focus {
+    background: #465c71;
+}
+
+
+#BtnRegistro {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #3498db;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#BtnRegistro:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+
+.Formulario-registro .btn-link {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.Formulario-registro .btn-link:hover {
+    color: #2980b9;
+}
+
+
+.font-title-registro {
+
+    font-size: 20px;
+    color: aqua;
+
+
+}
+
+
+
+
+/*Estilo pantalla del admin*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body.cuerpoPanel-admin {
+    background: #1a3b44;
+    color: #fff;
+    min-height: 100vh;
+}
+
+
+.Cabecera-panel-Admin {
+    width: 100%;
+    height: 80px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #2c3e50;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+
+.Cabecera-panel-Admin h2 {
+    position: absolute;
+    left: 40px;
+    margin: 0;
+    font-size: 18px;
+    color: darkgoldenrod;
+    font-weight: bold;
+}
+
+
+.Cabecera-panel-Admin .logoAdmin {
+    height: 220px;
+    width: 230px;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+    margin-top: 240px;
+}
+
+
+.Cabecera-panel-Admin .header-right {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Cabecera-panel-Admin .header-right .Icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    filter: brightness(2);
+    transition: filter 0.3s ease;
+}
+
+.Cabecera-panel-Admin .header-right .Icon:hover {
+    filter: brightness(2.5);
+}
+
+.Cabecera-panel-Admin .header-right button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.Cabecera-panel-Admin .header-right #btonayuda {
+    background: #3498db;
+    color: #fff;
+}
+
+.Cabecera-panel-Admin .header-right #btonayuda:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+.Cabecera-panel-Admin .header-right #btonSalir {
+    background: #e74c3c;
+    color: #fff;
+}
+
+.Cabecera-panel-Admin .header-right #btonSalir:hover {
+    background: #c0392b;
+    transform: scale(1.05);
+}
+
+
+.main-panel-admin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+
+    gap: 20px;
+}
+
+.main-panel-admin h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.panel-contenido {
+    background: #162930;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    max-width: 1500px;
+    margin: 50px auto;
+    min-height: 300px;
+    margin-top: 70px;
+}
+
+.panel-contenido h3 {
+    font-size: 24px;
+    color: #f1c40f;
+    text-align: center;
+}
+
+
+.panel-columnas {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    width: 100%;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #000;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.columna h4 {
+    margin-bottom: 10px;
+    color: darkgoldenrod;
+}
+
+.columna button {
+    width: 220px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    background: #3498db;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.columna button:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+#btonVolver {
+    margin-top: 40px;
+    align-self: flex-start;
+    width: 180px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #e67e22;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+#btonVolver:hover {
+    background: #d35400;
+}
+
+
+.main-panel-admin a {
+    text-decoration: none;
+}
+
+
+
+
+/*Estilo  panel del usuario */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body.cuerpo-panel-user {
+    min-height: 100vh;
+    background: #1a3b44;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.Cabecera-panel-usuario {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+    background: linear-gradient(90deg, #1a2a44, #2c3e50);
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    gap: 10px;
+}
+
+.Cabecera-panel-usuario .Icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#btonayuda,
+#btonSalir {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(45deg, #2980b9, #3498db);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+#btonayuda:hover,
+#btonSalir:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #3498db, #2980b9);
+}
+
+
+.cuerpo-pantalla-usuario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+
+}
+
+
+.titleBienvenida {
+    background: rgba(0, 0, 0, 0.3);
+
+    padding: 15px 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    margin-bottom: 25px;
+}
+
+.titleBienvenida h2 {
+    color: darkgoldenrod;
+
+    text-align: center;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+
+}
+
+
+.Container-usuario-funciones {
+    background: #1a2a44;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    width: 350px;
+    margin-top: 20px;
+}
+
+.Container-usuario-funciones .logouserApp {
+    width: 130px;
+    height: 150px;
+    margin-bottom: 7px;
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
+}
+
+.Container-usuario-funciones h4 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.botonesAccionesUser button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(45deg, #1abc9c, #16a085);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.botonesAccionesUser button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #16a085, #1abc9c);
+}
+
+.botonesAccionesUser a.btn-link button {
+    background: linear-gradient(45deg, #c0392b, #e74c3c);
+}
+
+.botonesAccionesUser a.btn-link button:hover {
+    background: linear-gradient(45deg, #e74c3c, #c0392b);
+}

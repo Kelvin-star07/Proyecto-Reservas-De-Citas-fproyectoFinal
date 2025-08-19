@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Stilo/styles.css">
+    <script src="/Logica/Logica.js" defer></script>
+    <title>Panel admin</title>
+</head>
+
+<body class="cuerpoPanel-admin">
+    <header class="Cabecera-panel-Admin">
+        <h2><span class="BienvenidaAdmin">Bienvenido sr.nombre</span></h2>
+        <img src="/Iconos/c213ecaf-bd05-400f-b4ea-fe58b08be42a-removebg-preview (1).png" alt="Logo" class="logoAdmin">
+        <div class="header-right">
+            <img onclick="NOfuncional()" id="campanaNotificacion" src="/Iconos/icons8-bell-24 (1).png"
+                alt="notificacion" class="Icon"><br>
+            <button onclick="NOfuncional()" id="btonayuda">Help</button><br>
+            <button onclick="NOfuncional()" id="btonSalir">Salir</button><br>
+            <img onclick="NOfuncional()" id="avatarPerfil" src="/Iconos/icons8-avatar-30.png" alt="perfil avatar"
+                class="Icon"><br>
+        </div>
+    </header>
+
+    <main class="main-panel-admin">
+        <div class="panel-contenido">
+            <h3>Seleccione una opción para comenzar</h3>
+
+            <div class="panel-columnas">
+                <div class="columna">
+                    <h4>Manejo de Configuración</h4>
+                    <div class="botones-columna">
+                        <a href="CrearConfiguracion.html"><button>Crear nueva configuración</button></a><br>
+                        <a href="ModificarConfig.html"><button>Modificar configuración</button></a><br>
+                        <a href="verConfiguracion.html"><button>Ver configuración</button></a><br>
+                    </div>
+                </div>
+
+                <div class="columna">
+                    <h4>Otros</h4>
+                    <div class="botones-columna">
+                        <a href="VerActividades.html"><button>Ver actividades</button></a><br>
+                        <a href="GestionarEstaciones.html"><button>Gestionar estaciones</button></a><br>
+                    </div>
+                </div>
+            </div>
+
+            <a href="Index.html" class="btn-link">
+                <button id="btonVolver" type="button">Volver a la pantalla de inicio</button><br>
+            </a>
+        </div>
+    </main>
+</body>
+
+</html>

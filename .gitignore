@@ -1,0 +1,34 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+
+# Visual Studio Code
+.vscode/
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# OneDrive / Documentos personales
+Documents/
+Downloads/
+Music/
+Pictures/
+Videos/
+Saved Games/
+Contacts/
+Favorites/
+AppData/
+
+# Archivos temporales
+*.log
+*.tmp
+*.bak

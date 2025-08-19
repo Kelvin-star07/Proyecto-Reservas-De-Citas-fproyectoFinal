@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Stilo/styles.css">
+    <script src="/Logica/Logica.js" defer></script>
+    <title>Registrarse</title>
+</head>
+
+<body class="cuerpoPantallaRegistro">
+    <header class="cabecera pantalla registro">
+        <img src="/Iconos/icons8-jungle-64.png" alt="Edificio" class="Icon">
+        <img src="/Iconos/icons8-jungle-64.png" alt="Balanza" class="Icono">
+        <img src="/Iconos/c213ecaf-bd05-400f-b4ea-fe58b08be42a-removebg-preview (1).png" alt="Logo" class="Logo">
+
+    </header>
+    <main class="cuerpo-pantalla-registro">
+        <form class="Formulario-registro">
+
+            <h3 id="Encabezado">Registrate <span class="font-title-registro">facilmente</span></h3>
+            <label for="NombreUser">Ingresa el nombre</label>
+            <input type="text" id="NombreUser" name="nombre" placeholder="Usuario" required><br>
+
+            <label for="ApellidoUsuario">Ingresa el apellido</label>
+            <input type="text" id="ApellidoUsuario" name="apellido" placeholder="Apellido" required><br>
+
+            <label for="EdadUsuario">Ingresa la edad</label>
+            <input type="number" id="EdadUsuario" name="edad" placeholder="Edad" required><br>
+
+            <label for="CedulaUsuario">Ingresa la cédula</label>
+            <input type="text" id="CedulaUsuario" name="cedula" placeholder="Cédula" required><br>
+
+            <label for="CorreoUsuario">Ingresa el correo</label>
+            <input type="email" id="CorreoUsuario" name="correo" placeholder="Correo" required><br>
+
+            <label for="ContraseñaRegistro">Ingresa la contraseña</label>
+            <input type="password" id="ContraseñaRegistro" name="password" placeholder="Contraseña" required><br>
+
+            <label for="SexoUsuario">Ingresa el sexo</label>
+            <input type="text" id="SexoUsuario" name="sexo" placeholder="Sexo ej: M" required><br>
+
+            <label for="DiaNacimiento">Ingresa el día de nacimiento</label>
+            <input type="number" id="DiaNacimiento" name="dia" placeholder="Día ej: 10" required><br>
+
+            <label for="MesNacimiento">Ingresa el mes de nacimiento</label>
+            <input type="number" id="MesNacimiento" name="mes" placeholder="Mes ej: 1" required><br>
+
+            <label for="AnoNacimiento">Ingresa el año de nacimiento</label>
+            <input type="number" id="AnoNacimiento" name="ano" placeholder="Año ej: 2010" required><br>
+
+            <button id="BtnRegistro" type="button">Registrarse</button><br>
+            <a href="Index.html" class="btn-link">Volver a la pantalla de inicio</a>
+        </form>
+    </main>
+</body>
+
+</html>

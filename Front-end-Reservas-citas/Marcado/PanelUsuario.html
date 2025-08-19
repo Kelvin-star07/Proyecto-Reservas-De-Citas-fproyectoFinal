@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Stilo/styles.css">
+    <script src="/Logica/Logica.js" defer></script>
+    <title>Panel usuario</title>
+</head>
+
+<body class="cuerpo-panel-user">
+    <header class="Cabecera-panel-usuario">
+        <img onclick="NOfuncional()" id="campanaNotificacion" src="/Iconos/icons8-bell-24 (1).png" alt="notificacion"
+            class="Icon"><br>
+        <button onclick="NOfuncional()" id="btonayuda">Help</button><br>
+        <button onclick="NOfuncional()" id="btonSalir">Salir</button><br>
+        <img onclick="NOfuncional()" id="avatarPerfil" src="/Iconos/icons8-avatar-30.png" alt="perfil avatar"
+            class="Icon"><br>
+    </header>
+
+
+    <main class="cuerpo-pantalla-usuario">
+        <div class="titleBienvenida">
+            <h2 d="Encabezado">Bienvenido a tu sistema de reservas de Citas</h2>
+        </div>
+        <div class="Container-usuario-funciones">
+            <img src="/Iconos/c213ecaf-bd05-400f-b4ea-fe58b08be42a-removebg-preview (1).png" alt="Logo"
+                class="logouserApp">
+
+            <h4>Seleccione una opcion para comenzar</h4>
+            <div class="botonesAccionesUser">
+                <a href="ReservandoCitas.html">
+                    <button id="btonReserva" type="button">Reservar cita</button>
+                </a><br>
+
+                <a href="VerCitas.html">
+                    <button id="btonconsurtarCita" type="button">Consultar Citas</button>
+                </a><br>
+
+                <a href="Index.html" class="btn-link">
+                    <button type="button" id="btonVolverUsuario">Volver a la pantalla de inicio</button>
+                </a><br>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>

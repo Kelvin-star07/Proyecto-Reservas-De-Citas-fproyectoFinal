@@ -1,0 +1,78 @@
+create database reservasCitas;
+
+
+
+use reservasCitas;
+
+---------------------------------------------------------------
+
+create table RegistroUsuario(
+Id int not null primary key identity,
+Nombre varchar(50) not null,
+Apellido varchar(50) not null,
+Edad int not null check(Edad > 0),
+Cedula varchar(50) not null unique,
+Correo varchar(100) not null unique,
+Contraseña varchar(10) not null unique,
+Sexo char(1) not null,
+Dia int not null,
+Mes int not null,
+Año int not null,
+Rol bit not null
+)
+
+--restrinccion para que no haiga un usuario repetido
+alter table RegistroUsuario
+add constraint idx_noRepetirRegistro unique(Nombre,Apellido,Cedula,Correo,Contraseña,Sexo)
+
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+
+create table ConfiguracionReserva(
+Id int not null primary key identity,
+Fecha date not null unique,
+Turno varchar(30) not null unique,
+HoraInicio time not null,
+HoraFin time not null,
+DuracionCitas int not null,
+CantidadEstaciones int not null
+)
+
+alter table ConfiguracionReserva
+add constraint UQ_FechaTurno  unique(Fecha, Turno);
+
+----------------------------------------------------------
+create table Estaciones(
+Id int not null primary key identity,
+Nombre varchar(50) not null,
+)
+
+
+------------------------------------------------------------
+create table ReservaCitas(
+Id int not null primary key identity,
+IdUsuario int not null references RegistroUsuario(Id),
+IdEstacion int not null references Estaciones(Id) ,
+Fecha date not null,
+Hora time not null,
+Turno varchar(30) not null,
+Estado varchar(50) not null default 'Pendiente'
+)
+
+
+
+--evita que un usuario tenga dos reservas el mismo día.
+alter table ReservaCitas
+add constraint UQ_Usuario_Fecha unique (IdUsuario, Fecha);
+
+--Evitar reservar la misma estacion y mismo slot
+alter table ReservaCitas
+add constraint idx_noRepetirEstacion UNIQUE (IdEstacion, Fecha, Hora)
+go
+
+
+

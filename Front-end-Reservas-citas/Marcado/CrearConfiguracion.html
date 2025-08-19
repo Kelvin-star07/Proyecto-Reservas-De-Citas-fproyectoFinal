@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Stilo/StylesConfiguracion.css">
+    <script src="/Logica/Logica.js" defer></script>
+    <title>creando configuracion</title>
+</head>
+
+<body class="cuerpoPantallaConfig">
+    <header class="cabecera-formulario-crearConfig">
+        <img src="/Iconos/icons8-jungle-64.png" alt="palma" class="icono-parmas">
+
+        <img src="/Iconos/icons8-jungle-64.png" alt="palma" class="icono-parmas">
+
+    </header>
+    <main class="Container-pantalla-configuracion">
+
+        <div class="Formulario-createConfig">
+            <form>
+                <img src="/Iconos/c213ecaf-bd05-400f-b4ea-fe58b08be42a-removebg-preview (1).png" alt="Logo de la app"
+                    class="Logo">
+                <h2 id="Encabezado" class="titleConfig">Configuracion Reservas</h2>
+
+                <label for="fechaConfiguracion">Introduce la fecha</label><br>
+                <input type="date" id="fechaConfiguracion" name="Fecha"><br>
+
+                <label for="turnoConfiguracion">Introduce el turno</label><br>
+                <input type="text" id="turnoConfiguracion" name="Turno" placeholder="ej: Matutino"><br>
+
+                <label for="horaInicio">Hora inicio</label><br>
+                <input type="text" id="horaInicio" name="HoraInicio" placeholder="ej: 10:00"><br>
+
+                <label for="horaFin">Hora fin</label><br>
+                <input type="text" id="horaFin" name="HoraFin" placeholder="ej: 18:00"><br>
+
+                <label for="duracionCittas">Duración de la cita</label><br>
+                <input type="number" id="duracionCittas" name="DuracionCitas" placeholder=" ej: 15"><br>
+
+                <label for="estacionesConfig">Cantidad de estaciones</label><br>
+                <input type="number" id="estacionesConfig" name="Estaciones" placeholder="ej: 3"><br>
+
+
+            </form>
+            <div class="botones-config">
+                <button id="ConfirmarConfig" type="button">Confirmar</button>
+                <button id="ConcelarConfig" type="button">Cancelar</button>
+            </div>
+
+            <a href="PanelAdmin.html">
+                <button id="btonbackPanelAdmin" type="button"> volver al panel</button>
+            </a><br>
+        </div>
+
+    </main>
+
+
+
+</body>
+
+</html>

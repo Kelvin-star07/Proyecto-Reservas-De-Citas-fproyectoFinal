@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Stilo/styles.css">
+    <script src="/Logica/Logica.js" defer></script>
+    <title>Pantalla inicio</title>
+</head>
+
+<body class="CuerpoPantallaInicio">
+    <header class="headerPantallaInicio">
+
+        <img src="/Iconos/icons8-jungle-64.png" alt="Edificio" class="Icon">
+        <img src="/Iconos/icons8-jungle-64.png" alt="Balanza" class="Icono">
+        <img src="/Iconos/c213ecaf-bd05-400f-b4ea-fe58b08be42a-removebg-preview (1).png" alt="Logo" class="Logo">
+
+    </header>
+    <main class="mainInicio">
+        <form class="Formulario-Login">
+            <label for="NombreUser">Ingresa el nombre de usuario</label>
+            <input type="text" id="NombreUser" name="Nombre" placeholder="Usuario" required><br>
+
+            <label for="ContraseñaLogin">Ingresa la contraseña</label>
+            <input type="password" id="ContraseñaLogin" name="Contraseña" placeholder="Contraseña" required><br>
+
+            <h6 onclick="NOfuncional()">¿Olvidaste tu contraseña?</h6><br>
+
+            <button id="BtnLogin" type="button" class="btonIngresarInicio">Ingresar</button><br>
+            <a href="Registrarse.html" class="btn-link">Registrarse</a>
+        </form>
+    </main>
+</body>
+
+</html>
