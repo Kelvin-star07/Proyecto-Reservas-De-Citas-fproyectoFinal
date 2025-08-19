@@ -1,4 +1,4 @@
-                                                                  ![Captura del sistema](PantallaInicial.png)
+                                    ![Captura del sistema](https://github.com/Kelvin-star07/Proyecto-Reservas-De-CitasfproyectoFinal/blob/main/PantallaInicial.png)
 
 
 
